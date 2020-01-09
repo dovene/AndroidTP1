@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConnexionActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Connexion"
+        android:textSize="40dp"
+        android:layout_margin="30dp"
+        android:id="@+id/connexion"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toLeftOf="@id/psd2"
+        app:layout_constraintTop_toBottomOf="@id/connexion"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Pseudo :"
+        android:textSize="20dp"
+        android:id="@+id/psdview"
+        android:layout_margin="20dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/connexion"
+        app:layout_constraintLeft_toRightOf="@id/psdview"
+        android:hint="Insérer votre pseudo"
+        android:id="@+id/psd2"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toLeftOf="@id/mdp2"
+        app:layout_constraintTop_toBottomOf="@id/psdview"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Mot de passe :"
+        android:textSize="20dp"
+        android:id="@+id/mdpview"
+        android:layout_margin="20dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/psdview"
+        app:layout_constraintLeft_toRightOf="@id/mdpview"
+        android:hint="Insérer votre mdp"
+        android:id="@+id/mdp2"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/mdp2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="20dp"
+        android:text="Valider"
+        android:id="@+id/valider"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

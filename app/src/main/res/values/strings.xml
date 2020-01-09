@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TP_Note</string>
+    <string name="inscription">Inscription</string>
+    <string name="connexion">Connexion</string>
+</resources>
